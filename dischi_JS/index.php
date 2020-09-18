@@ -39,17 +39,18 @@ gli album per artista -->
                 <li class="selected">All</li>
             </ul>
         </div>
-        <div class="options">
-            <select>
-                <option value="Genere">Genere</option>
-                <option value="Autore">Autore</option>
-            </select>
-        </div>
         
         <div class="select_2">
             <ul>
 
             </ul>
+        </div>
+
+        <div class="options">
+            <select>
+                <option value="Genere">Genere</option>
+                <option value="Autore">Autore</option>
+            </select>
         </div>
 
         <div class="cds-container container">
