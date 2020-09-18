@@ -34,15 +34,6 @@ gli album per artista -->
                 <img src="img/logo.png" alt="logo" />
             </div>
         </header>
-        <div class="select">
-            <ul>
-                <li>Rock</li>
-                <li>Pop</li>
-                <li>Jazz</li>
-                <li>Metal</li>
-                <li class="selected">All</li>
-            </ul>
-        </div>
 
         <div class="cds-container container">
 
