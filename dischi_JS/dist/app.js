@@ -112,11 +112,43 @@ $(document).ready(function () {
     method: "GET",
     success: function success(data) {
       for (var i = 0; i < data.length; i++) {
+        var source = $("#authors").html();
+        var template = Handlebars.compile(source);
+        var context = {
+          'author': data[i].author
+        };
+        var html = template(context);
+        $('.select_2 ul').append(html);
         var source = $("#entry-template").html();
         var template = Handlebars.compile(source);
         var context = data[i];
         var html = template(context);
         $('.cds-container').append(html);
+      }
+    },
+    error: function error(errori) {
+      alert("ERRORE!: " + errori);
+    }
+  });
+}); // CHIAMATA AJAX GET AUTHORS
+
+$(document).on('click', '.select_2 ul li', function () {
+  $('.cds-container').empty();
+  $('.select_2 ul li').removeClass('selected');
+  $(this).addClass('selected');
+  var authorSelected = $(this).text();
+  $.ajax({
+    url: 'http://localhost/php/04/php-ajax-dischi/dischi_JS/db.php',
+    method: "GET",
+    success: function success(data) {
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].author == authorSelected) {
+          var source = $("#entry-template").html();
+          var template = Handlebars.compile(source);
+          var context = data[i];
+          var html = template(context);
+          $('.cds-container').append(html);
+        }
       }
     },
     error: function error(errori) {

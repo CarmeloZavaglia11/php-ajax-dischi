@@ -39,6 +39,12 @@ gli album per artista -->
                 <li class="selected">All</li>
             </ul>
         </div>
+        
+        <div class="select_2">
+            <ul>
+
+            </ul>
+        </div>
 
         <div class="cds-container container">
                       
@@ -52,6 +58,10 @@ gli album per artista -->
                         <span class="year">{{year}}</span>
                     </div>
         </script> 
+
+        <script id="authors" type="text/x-handlebars-template">
+                <li>{{author}}</li>
+        </script>
         
 
         <script src="dist/app.js" charset="utf-8"></script>

@@ -27,6 +27,36 @@
     }
 }
 
+.select_2 {
+    color: $lightGreen;
+    width: 60%;
+    margin: 50px auto;
+    background-color: $select;
+    border-radius: 10px;
+
+    ul {
+        height: 100%;
+        @include flex(row,space-evenly,center,nowrap);
+        list-style: none;
+
+        li {
+            @include flex(row,center,center,nowrap);
+            font-size: 0.8em;
+            padding: 10px 20px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $selectHover;
+                opacity: 0.8;
+            }
+            
+        }
+        
+    }
+}
+
 .cds-container {
     @include flex(row,center,center,wrap);
     padding: 100px 0;
