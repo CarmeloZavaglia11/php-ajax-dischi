@@ -30,7 +30,7 @@ gli album per artista -->
                 <img src="img/logo.png" alt="logo" />
             </div>
         </header>
-        <div class="select">
+        <div class="select active">
             <ul>
                 <li>Rock</li>
                 <li>Pop</li>
@@ -38,6 +38,12 @@ gli album per artista -->
                 <li>Metal</li>
                 <li class="selected">All</li>
             </ul>
+        </div>
+        <div class="options">
+            <select>
+                <option value="Genere">Genere</option>
+                <option value="Autore">Autore</option>
+            </select>
         </div>
         
         <div class="select_2">

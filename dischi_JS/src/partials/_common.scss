@@ -25,3 +25,12 @@ body {
     background-color: $genreSelected;
     box-shadow: 2 1 5px #000;
 }
+
+.active {
+    display: block;
+}
+
+.select.active,
+.select_2.active {
+    display: block;
+}

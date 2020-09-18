@@ -26,6 +26,15 @@ body {
   box-shadow: 2 1 5px #000;
 }
 
+.active {
+  display: block;
+}
+
+.select.active,
+.select_2.active {
+  display: block;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -38,6 +47,7 @@ header img {
 }
 
 .select {
+  display: none;
   color: #1ed760;
   width: 50%;
   height: 50px;
@@ -68,7 +78,21 @@ header img {
   opacity: 0.8;
 }
 
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+.options select {
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #1ed760;
+  background-color: #2e3a46;
+}
+
 .select_2 {
+  display: none;
   color: #1ed760;
   width: 60%;
   margin: 50px auto;

@@ -1,4 +1,5 @@
 .select {
+    display: none;
     color: $lightGreen;
     width: 50%;
     height: 50px;
@@ -27,7 +28,22 @@
     }
 }
 
+.options {    
+    display: flex;
+    justify-content: center;
+    
+
+    select {
+        border: 0;
+        padding: 10px;
+        border-radius: 5px;
+        color: $lightGreen;
+        background-color: #2e3a46;
+    }
+}
+
 .select_2 {
+    display: none;
     color: $lightGreen;
     width: 60%;
     margin: 50px auto;
