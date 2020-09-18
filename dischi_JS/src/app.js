@@ -146,7 +146,7 @@ function ajaxGenre(genere) {
 
 		if ($(this).val() == 'Genere') {
 			$('.select').addClass('active');
-			$('.select_2').removeClass('active');	
+			$('.select_2').removeClass('active');
 		} else if ($(this).val() == 'Autore'){
 			$('.cds-container').empty();
 			$('.select_2').addClass('active');	

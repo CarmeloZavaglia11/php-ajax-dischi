@@ -27,12 +27,12 @@ body {
 }
 
 .active {
-  display: block;
+  opacity: 1;
 }
 
 .select.active,
 .select_2.active {
-  display: block;
+  opacity: 1;
 }
 
 header {
@@ -47,7 +47,8 @@ header img {
 }
 
 .select {
-  display: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
   color: #1ed760;
   width: 50%;
   height: 50px;
@@ -92,7 +93,8 @@ header img {
 }
 
 .select_2 {
-  display: none;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
   color: #1ed760;
   width: 60%;
   margin: 50px auto;

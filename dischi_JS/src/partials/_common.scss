@@ -27,10 +27,10 @@ body {
 }
 
 .active {
-    display: block;
+    opacity: 1;
 }
 
 .select.active,
 .select_2.active {
-    display: block;
+    opacity: 1;
 }
