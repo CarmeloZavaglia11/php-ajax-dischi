@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: $body;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1070px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cd.active {
+    display: flex;
+}
+
+.selected {
+    transform: scale(1.1);
+    background-color: $genreSelected;
+    box-shadow: 2 1 5px #000;
+}

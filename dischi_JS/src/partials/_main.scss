@@ -1,0 +1,81 @@
+.select {
+    color: $lightGreen;
+    width: 50%;
+    height: 50px;
+    margin: 50px auto;
+    background-color: $select;
+    border-radius: 10px;
+
+    ul {
+        height: 100%;
+        @include flex(row,space-evenly,center,wrap);
+        list-style: none;
+
+        li {
+            padding: 10px 20px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $selectHover;
+                opacity: 0.8;
+            }
+            
+        }
+        
+    }
+}
+
+.cds-container {
+    @include flex(row,center,center,wrap);
+    padding: 100px 0;
+}
+
+.cd {
+    display: none;
+    flex-basis: 200px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 20px;
+    height: 360px;
+    background: $cd;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #000;
+        cursor: pointer;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h3 {
+        margin: 20px 0;
+        color: $white;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    span.author {
+        color: $grey;
+        font-size: 20px;
+    }
+    
+    span.year {
+        color: $grey;
+    }
+    
+    
+}
+
+
+
+
+
+
+
