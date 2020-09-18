@@ -105,22 +105,6 @@ $(document).ready(function () {
     } else {
       $('.cd.' + genre).addClass('active');
     }
-  });
-  $.ajax({
-    url: 'http://localhost/php/04/php-ajax-dischi/dischi_JS/db.php',
-    method: "GET",
-    success: function success(data) {
-      for (var i = 0; i < data.length; i++) {
-        var source = $("#entry-template").html();
-        var template = Handlebars.compile(source);
-        var context = data[i];
-        var html = template(context);
-        $('.cds-container').append(html);
-      }
-    },
-    error: function error(errori) {
-      alert("ERRORE!: " + errori);
-    }
   }); // CHIAMATA AJAX GET CD
 
   $.ajax({
